@@ -68,8 +68,12 @@ class ViewController: UIViewController {
     private func initialise() {
         maxRadius   =  Double(mainCircle.frame.size.height)
         //maxRadius   = Double(self.view.frame.maxX/2)
-        offSetx     = Double(self.view.center.x) - self.seedSizeX/2
-        offSety     = Double(self.view.center.y) - self.seedSizeX/2
+        offSetx = Double(mainCircle.bounds.size.width/2 + mainCircle.bounds.origin.x) - self.seedSizeX/2
+        offSety = Double(mainCircle.bounds.size.height/2 + mainCircle.bounds.origin.y) - self.seedSizeX/2
+        //offSetx     = Double(self.view.frame.center.x) - self.seedSizeX/2
+        //offSety     = Double(self.view.frame.center.y) - self.seedSizeX/2
+//        offSetx     = Double(self.view.center.x) - self.seedSizeX/2
+//        offSety     = Double(self.view.center.y) - self.seedSizeX/2
         getSettings()
     }
     

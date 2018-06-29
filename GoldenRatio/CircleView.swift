@@ -39,10 +39,14 @@ import UIKit
         
         context.beginPath()
 //        var path = UIBezierPath()
-        var path = UIBezierPath(ovalIn: CGRect(x: self.frame.size.width/2 - self.frame.size.height/2,
-                                                y: 0.0,
-                                                width: self.frame.size.height,
-                                                height: self.frame.size.height))
+//        var path = UIBezierPath(ovalIn: CGRect(x: self.frame.size.width/2 - self.frame.size.height/2,
+//                                                y: 0.0,
+//                                                width: self.frame.size.height,
+//                                                height: self.frame.size.height))
+        var path = UIBezierPath(ovalIn: CGRect(x: self.bounds.size.width/2 - self.bounds.size.height/2,
+                                               y: 0.0,
+                                               width: self.bounds.size.height,
+                                               height: self.bounds.size.height))
 //        context.move(to: CGPoint(x: rect.minX + _margin, y: rect.maxY - _margin))
 //        context.addLine(to: CGPoint(x: rect.maxX - _margin, y: rect.maxY - _margin))
 //        context.addLine(to: CGPoint(x: (rect.maxX / 2.0), y: rect.minY + _margin))
