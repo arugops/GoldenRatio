@@ -24,18 +24,17 @@ class ShapeView: UIView {
     override func draw(_ rect: CGRect) {
         
         guard let context = UIGraphicsGetCurrentContext() else { return }
+
+        context.setFillColor(_color.cgColor)
+        UIColor.red.setStroke()
+
         context.beginPath()
-//        context.move(to: CGPoint(x: rect.minX + _margin, y: rect.maxY - _margin))
-//        context.addLine(to: CGPoint(x: rect.maxX - _margin, y: rect.maxY - _margin))
-//        context.addLine(to: CGPoint(x: (rect.maxX / 2.0), y: rect.minY + _margin))
         context.move(to: CGPoint(x: rect.minX + _margin, y: rect.maxY - _margin))
         context.addLine(to: CGPoint(x: rect.maxX - _margin, y: rect.maxY - _margin))
         context.move(to: CGPoint(x: rect.minX + _margin, y: rect.maxY - _margin))
         context.addLine(to: CGPoint(x: (rect.maxX / 2.0), y: rect.minY + _margin))
         context.closePath()
         
-        context.setFillColor(_color.cgColor)
-//        UIColor.black.setStroke()
         context.fillPath()
     }
 
