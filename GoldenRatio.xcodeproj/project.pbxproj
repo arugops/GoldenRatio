@@ -15,6 +15,7 @@
 		0411E3F720C3AD0F005E124A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411E3F520C3AD0F005E124A /* LaunchScreen.storyboard */; };
 		0411E3FF20C3B4D9005E124A /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411E3FE20C3B4D9005E124A /* CircleView.swift */; };
 		0411E40120C3BB4A005E124A /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411E40020C3BB4A005E124A /* ShapeView.swift */; };
+		0419DF2520E8C402009582A8 /* AppCommonCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419DF2420E8C402009582A8 /* AppCommonCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0411E3F820C3AD0F005E124A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0411E3FE20C3B4D9005E124A /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		0411E40020C3BB4A005E124A /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		0419DF2420E8C402009582A8 /* AppCommonCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommonCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				0411E3E920C3AD0D005E124A /* AppDelegate.swift */,
 				0411E3EB20C3AD0D005E124A /* ViewController.swift */,
+				0419DF2420E8C402009582A8 /* AppCommonCode.swift */,
 				0411E3FE20C3B4D9005E124A /* CircleView.swift */,
 				0411E3ED20C3AD0D005E124A /* Main.storyboard */,
 				0411E40020C3BB4A005E124A /* ShapeView.swift */,
@@ -149,6 +152,7 @@
 				0411E3EC20C3AD0D005E124A /* ViewController.swift in Sources */,
 				0411E3EA20C3AD0D005E124A /* AppDelegate.swift in Sources */,
 				0411E3F220C3AD0D005E124A /* GoldenRatio.xcdatamodeld in Sources */,
+				0419DF2520E8C402009582A8 /* AppCommonCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,18 +40,18 @@ import UIKit
         context.beginPath()
         let squareX = min(self.frame.size.height, self.frame.size.width) - _margin
         radius = Double(squareX) / 2.0
-        let offset = (self.frame.size.width - squareX) / 2.0
-        origin = CGPoint(x: self.frame.origin.x + offset, y: 0.0 + _margin)
+//        let offset = (self.frame.size.width - squareX) / 2.0
+        let offsetx = (self.frame.size.width / 2.0) - CGFloat(radius)
+        let offsety = (self.frame.size.height / 2.0) - CGFloat(radius)
+//        print("Origin : \(self.bounds.origin.x) y \(self.bounds.origin.y)")
+        origin = CGPoint(x: offsetx, y: offsety)
 //        print("Rad : \(radius)")
-//        print("Cen : \(centre)")
+//        print("Cen : \(center)")
+//        print("Offsetx : \(offsetx) y \(offsety)")
         let path = UIBezierPath(ovalIn: CGRect(x: origin.x,
                                                y: origin.y,
                                                width: squareX,
                                                height: squareX))
-//        var path = UIBezierPath(ovalIn: CGRect(x: self.bounds.size.width/2 - self.bounds.size.height/2,
-//                                               y: 0.0,
-//                                               width: self.bounds.size.height + _margin,
-//                                               height: self.bounds.size.height - _margin))
 
         context.setFillColor(_color.cgColor)
         UIColor.black.setStroke()
